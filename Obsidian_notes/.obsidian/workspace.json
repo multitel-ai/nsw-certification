@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "6fa3c7cc254dda2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "72a3df257dcabf75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfa18b40e958db60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TOOLS/Syntetic Data Vault.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "885011effd99b247",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e1ae7ec776282a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2147bd8a7d30e6f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "473dc5ad432d9ad9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "58c86e8098adfc61",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d1a7f781f7ccf158",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bd370e9eb5667a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29d9e890e607d7a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TOOLS/Syntetic Data Vault.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "93f8e4ee22a0f4ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TOOLS/Syntetic Data Vault.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "814e7e373c079fb8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e4cfe7bc81b21eb7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TOOLS/Syntetic Data Vault.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "bfa18b40e958db60",
+  "lastOpenFiles": [
+    "TOOLS/CAPSA - A Library for Risk-Aware and Trustworthy Machine Learning.md",
+    "TOOLS/Biais and Fairness framework.md",
+    "TOOLS/AI 360 Series - TRUSTED-AI & IBM (Watson studio).md",
+    "SOA/SOA Data Augmentation.md",
+    "SOA/SOA - Domain generalization.md",
+    "SOA/Data augmentation for Tabular data.md"
+  ]
+}
