@@ -15,6 +15,8 @@ The capabilities of AI are not hidden. Intelligence of machines is undergoing ma
 This extensible open-source toolkit can help you examine, report, and mitigate discrimination and bias in machine learning models throughout the AI application lifecycle. Containing over 70 fairness metrics and 10 state-of-the-art bias mitigation algorithms developed by the research community, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
 **RELEASED** : Sept22
 **[Examples](https://github.com/Trusted-AI/AIF360/tree/master/examples)**
+[[AI Fairness 360]]
+
 ## [AI Explainability 360](https://github.com/Trusted-AI/AIX360)
 This extensible open source toolkit can help you comprehend how machine learning models predict labels by various means throughout the AI application lifecycle. Containing eight state-of-the-art algorithms for interpretable machine learning as well as metrics for explainability, it is designed to translate algorithmic research from the lab into the actual practice of domains as wide-ranging as finance, human capital management, healthcare, and education.
 **RELEASED** : Jul23
