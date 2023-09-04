@@ -1,6 +1,8 @@
 # Nantes Workshop Certification
 
+## Description du projet
 
+Le but de ce projet est de **CERTIFIER** une un système estimant la puissance instantanée utilisée par un drone durant son vol. Ce système a été développée dans le cadre du projet WINGS par Multitel. L'objectif est maintenant de garantir l'utilisation d'une IA digne de confiance. Ceci passe par la **Certification** de l'ensemble du processus permettant d'obtenir et maintenir le composant IA/ML du système proposé. Cette certification couvre un grand nombre d'aspect, allant de la collecte des données au monitoring du système une fois celui-ci mis en production. Dans le cadre du workshop, nous commencerons donc d'abord par définir les aspects que l'on veux certifier (**data, explicabilité, robustesse, gestion de l'incertitude,..** ). 
 
 ## Getting started
 
