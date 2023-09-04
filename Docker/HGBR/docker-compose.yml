@@ -10,5 +10,4 @@ services:
     restart: always
     volumes:
       - ../../:/App
-      - ../../Data:/Data
     entrypoint: tail -f /dev/null
