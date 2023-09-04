@@ -2,9 +2,10 @@
 
 # DATA
 
-| TASK | Bérangère | Florian | Manu |
-| ---- | --------- | ------- | ---- |
-|  SOA [1]    |           |         |   X   |
+| TASK                      | Bérangère | Florian | Manu |
+| ------------------------- | --------- | ------- | ---- |
+| SOA [1]                   |           |         | X    |
+| TOOLS/[[AI Fairness 360]] | X         |         |      |
 
 
 
