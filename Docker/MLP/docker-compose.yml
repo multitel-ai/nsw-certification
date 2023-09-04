@@ -7,7 +7,7 @@ services:
       dockerfile: dockerfile
     volumes:
       - ../../:/App
-      - ../Data:/Data
+      - ../../Data:/Data
     # ports:
     #   - 8888:8888
     environment:
