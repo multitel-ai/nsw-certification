@@ -1,0 +1,14 @@
+FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
+RUN rm /etc/apt/sources.list.d/cuda.list && rm /etc/apt/sources.list.d/nvidia-ml.list \
+    && apt update -y && apt install -y sudo wget \
+    && addgroup --gid 1000 user \
+    && adduser --disabled-password --gecos '' --uid 1000 --gid 1000 user \
+    && usermod -aG sudo user \
+    && echo "user ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
+    && pip install jupyter pipreqs
+
+COPY requirements_vpower.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+USER user
+WORKDIR /App
