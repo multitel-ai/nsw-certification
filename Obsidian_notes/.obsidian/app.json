@@ -1,3 +1,5 @@
 {
-  "attachmentFolderPath": "Attachements"
+  "attachmentFolderPath": "Attachements",
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true
 }

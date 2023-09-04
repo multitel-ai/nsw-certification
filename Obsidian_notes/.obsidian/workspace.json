@@ -13,13 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TOOLS/Syntetic Data Vault.md",
+                "file": "NSW - Certification d'un système d'estimation de puissance instantanée pour un drone.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1496aca29d64ff2b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "eb92909c22386151",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Affectation des taches.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/Syntetic Data Vault.md",
+                "file": "Affectation des taches.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/Syntetic Data Vault.md",
+                "file": "Affectation des taches.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +146,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/Syntetic Data Vault.md"
+                "file": "Affectation des taches.md"
               }
             }
+          },
+          {
+            "id": "da873d49f795a0ff",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,11 +172,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f2147bd8a7d30e6f",
+  "active": "da873d49f795a0ff",
   "lastOpenFiles": [
+    "NSW - Certification d'un système d'estimation de puissance instantanée pour un drone.md",
+    "Affectation des taches.md",
+    "TOOLS/Syntetic Data Vault.md",
     "TOOLS/ORION - Anomaly Detection in time series.md",
     "Attachements",
     "TOOLS/CAPSA - A Library for Risk-Aware and Trustworthy Machine Learning.md",
