@@ -7,7 +7,7 @@ services:
       dockerfile: dockerfile
     volumes:
       - ../../:/App
-      - /home/burgunder/WINGS/Datasets/Fairness/split_quad/ds quad:/Data
+      - ../Data:/Data
     # ports:
     #   - 8888:8888
     environment:

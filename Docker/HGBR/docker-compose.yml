@@ -10,5 +10,5 @@ services:
     restart: always
     volumes:
       - ../../:/App
-      - /home/burgunder/WINGS/Datasets/Fairness/split_quad/ds quad:/Data
+      - ../Data:/Data
     entrypoint: tail -f /dev/null
