@@ -4,9 +4,8 @@
 
 | TASK                      | Bérangère | Florian | Manu |
 | ------------------------- | --------- | ------- | ---- |
-| Sintel Tools                  |           |         | X    |
+|               [[Sintel Tools  ]]  |           |         | X    |
 | TOOLS/[[AI Fairness 360]] | X         |         |      |
-
 
 
 ## SOA
