@@ -38,8 +38,8 @@ Date : 2022-10-14
 
 ### Framework
 
+Images
 - [GitHub - ODIN : A simple and effective method for detecting out-of-distribution images in neural networks.](https://github.com/facebookresearch/odin)
-
 
 - [GitHub - OpenOOD: Benchmarking Generalized Out-of-Distribution Detection](https://github.com/jingkang50/openood)
 ![[Pasted image 20221027093117.png]]
@@ -47,3 +47,6 @@ Date : 2022-10-14
 - [GitHub - Oodeel: Simple, compact, and hackable post-hoc deep OOD detection](https://github.com/deel-ai/oodeel)
 
 ![[Pasted image 20230403150155.png]]
+
+Distribution shift
+[GitHub - microsoft/distribution-shift-latent-representations](https://github.com/microsoft/distribution-shift-latent-representations)

@@ -4,17 +4,15 @@
 
 | TASK                      | Bérangère | Florian | Manu |
 | ------------------------- | --------- | ------- | ---- |
-| SOA [1]                   |           |         | X    |
+| Sintel Tools                  |           |         | X    |
 | TOOLS/[[AI Fairness 360]] | X         |         |      |
 
 
 
 ## SOA
 
-[1]  [[arXiv Oct22] Explanation Shift: Detecting distribution shifts on tabular data via the explanation space](https://arxiv.org/abs/2210.12369)
-
 ## TOOLS
-
+[[Sintel Tools]] : Time Series Toolbox by MIT
 
 
 
