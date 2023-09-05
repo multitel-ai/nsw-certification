@@ -78,7 +78,7 @@ def check_metric(curr_value, best_value, not_improved, model, store_path):
     return best_value, not_improved
 
 
-def train(model, train_dataset, val_dataset, optimizer, store_path, es_monitor, device, batch_size=32, n_epochs=80, patience=4):
+def train(model, train_dataset, val_dataset, optimizer, store_path, es_monitor, device, batch_size=32, n_epochs=80, patience=4,scheduler=None):
     """
         Model training with early stopping.
         :param model: model
@@ -127,6 +127,8 @@ def train(model, train_dataset, val_dataset, optimizer, store_path, es_monitor, 
             loss = -outputs.log_prob(labels).mean()
             loss.backward()
             optimizer.step()
+            if scheduler:
+                scheduler.step()
             epoch_losses.append(loss.item())
 
             y_pred = model.predict(inputs)
@@ -200,7 +202,7 @@ def train_save(imin, imax, model_dir, device, train_ds, val_ds,
                                 hidden_size_2=hiddens[1],
                                 dropout=dropout).to(device) # load on gpu or cpu 
         optimizer = torch.optim.Adam(params=model.parameters(), lr=lr)
-
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=lr*10, total_steps=len(train_ds)//batch_size*n_epochs+n_epochs)
         history = train(model=model,
                         train_dataset=train_ds,
                         val_dataset=val_ds,
@@ -210,6 +212,7 @@ def train_save(imin, imax, model_dir, device, train_ds, val_ds,
                         batch_size=batch_size,
                         n_epochs=n_epochs,
                         es_monitor=es_monitor,
+                        scheduler=scheduler,
                         patience=patience)
         models_hs[i] = history
 
@@ -276,7 +279,7 @@ def get_ensemble_predictions(model_list, data_norm, multi_runs):
 
     return all_preds
 
-def mul_predict(data_all_norm, input_features, loaded_models, means, stds, target="power_smoothed"):
+def mul_predict(data_all_norm, input_features, loaded_models, means, stds, target="power_smoothed",multi_run=10):
     """ Computes predictions for each subset and denormalize them. Needs means and stds of input features.
     Returns a dictionnary with those predictions, keys are the subsets names. """
     predictions = {}
@@ -285,7 +288,7 @@ def mul_predict(data_all_norm, input_features, loaded_models, means, stds, targe
         inputs = torch.tensor(data_all_norm[k][input_features].values).float()
         preds_norm = get_ensemble_predictions(model_list=loaded_models,
                                             data_norm=inputs,
-                                            multi_runs=10)
+                                            multi_runs=multi_run)
         predictions[k]["norm"] = preds_norm
         # Denormalize predicted mean
         preds_denorm = denorm_prediction(preds_norm=preds_norm,
