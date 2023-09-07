@@ -4,6 +4,8 @@ Projets :
 Tags : #library 
 Date : 2023-04-14
 ***
+/!\ Maintenant c'est plus opensource, c'est devenu CAPSA PRO /!\
+
 
 **Capsa**, a flexible framework for extending models to become risk-aware, achieves this by providing two vital components that work together:
 

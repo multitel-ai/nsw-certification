@@ -27,6 +27,7 @@ On pourrait just les retirer mais ils sont très corrélés à d'autres données
 # Use 
 - Surtout pour detecter et corriger les biais : 
 	- from aif360.sklearn.detectors import bias_scan [tutorial\_bias\_advertising.ipynb](https://github.com/Trusted-AI/AIF360/blob/master/examples/tutorial_bias_advertising.ipynb) 
+-> marche plutot pour la classification, pas très utile pour la regression 
 
 - Model explaination :
 	- [demo\_lime.ipynb](https://github.com/Trusted-AI/AIF360/blob/master/examples/demo_lime.ipynb) LIME Local Interpretable Model-Agnostic Explanations 

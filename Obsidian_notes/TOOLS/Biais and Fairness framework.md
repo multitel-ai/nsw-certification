@@ -7,6 +7,7 @@ Date : 2023-04-04
 
 Tabular data
 [GitHub - dssg/aequitas: Bias and Fairness Audit Toolkit](https://github.com/dssg/aequitas)
+-> seulement binary classification 
 
 
 World Embedding
