@@ -7,7 +7,7 @@ RUN rm /etc/apt/sources.list.d/cuda.list && rm /etc/apt/sources.list.d/nvidia-ml
     && echo "user ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
     && pip install jupyter pipreqs
 
-COPY requirements_vpower.txt /tmp/requirements.txt
+COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 USER user

@@ -1,7 +1,6 @@
 FROM python:3.6
 
-RUN rm /etc/apt/sources.list.d/cuda.list && rm /etc/apt/sources.list.d/nvidia-ml.list \
-    && apt update -y && apt install -y sudo wget \
+RUN apt update -y && apt install -y sudo wget \
     && addgroup --gid 1000 user \
     && adduser --disabled-password --gecos '' --uid 1000 --gid 1000 user \
     && usermod -aG sudo user \

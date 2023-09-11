@@ -13,6 +13,10 @@
 
 ## TOOLS
 [[Sintel Tools]] : Time Series Toolbox by MIT
+[Fetching Title#zt7m](https://pyod.readthedocs.io/en/latest/index.html)  : Outlier/anomaly detection for tabular data
+[GitHub - datamllab/tods: TODS: An Automated Time-series Outlier Detection System](https://github.com/datamllab/tods) Outlier/anomaly detection for multivariate time series
+
+
 
 
 ### Fait main 
