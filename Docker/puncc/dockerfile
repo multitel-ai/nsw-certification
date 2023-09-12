@@ -1,0 +1,16 @@
+FROM python:3.8
+
+RUN apt update -y && apt install -y sudo wget \
+    && addgroup --gid 1000 user \
+    && adduser --disabled-password --gecos '' --uid 1000 --gid 1000 user \
+    && usermod -aG sudo user \
+    && echo "user ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
+    && pip install jupyter pipreqs
+
+
+RUN pip install git+https://github.com/deel-ai/puncc
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+USER user
+WORKDIR /App

@@ -6,11 +6,13 @@
 | [[Sintel Tools  ]]        |           |         | X    |
 | TOOLS/[[AI Fairness 360]] | X         |         |      |
 | biais/mlp_bias            | X         |         |      |
-| MAPIE                     | X          |         |      |
-|DA/SDV Single Table (KO)||X|
-|DA/SDV Sequantial (KO) ||X|
-|DA/Augment TS (KO) ||X|
-|DA/Tsaug (~KO) ||X|
+| MAPIE                     | X         |         |      |
+| DA/SDV Single Table (KO)  |           | X       |      |
+| DA/SDV Sequantial (KO)    |           | X       |      |
+| DA/Augment TS (KO)        |           | X       |      |
+| DA/Tsaug (~KO)            |           | X       |      |
+| PyOD                      |           |         | X    |
+| PUNCC                         |           |         |    X  |
 
 
 
@@ -24,7 +26,8 @@
 [[Sintel Tools]] : Time Series Toolbox by MIT
 [Fetching Title#zt7m](https://pyod.readthedocs.io/en/latest/index.html)  : Outlier/anomaly detection for tabular data
 [GitHub - datamllab/tods: TODS: An Automated Time-series Outlier Detection System](https://github.com/datamllab/tods) Outlier/anomaly detection for multivariate time series
-
+[GitHub - donlnz/nonconformist: Python implementation of the conformal prediction framework.](https://github.com/donlnz/nonconformist) - Conformal prediction
+[GitHub - deel-ai/puncc: 👋 Puncc is a python library for predictive uncertainty quantification using conformal prediction.](https://github.com/deel-ai/puncc) Conformal Prediction (DEEL Project)
 
 
 

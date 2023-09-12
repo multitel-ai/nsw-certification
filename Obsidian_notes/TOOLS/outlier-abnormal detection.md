@@ -80,14 +80,13 @@ On Test Data:
 One-class SVM (OCSVM) ROC:0.4952, precision @ rank n:0.0
 11 fitting Principal Component Analysis (PCA)
 
+SANS PAYLOAD
 CBLOF
+
 ![[Pasted image 20230912105325.png]]
 
 
 SANS PAYLOAD
-
-
-
 
 
 ![[Pasted image 20230912104852.png]]

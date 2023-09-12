@@ -1,7 +1,7 @@
 version: "2.4"
 services:
-  dev_env:shm_size: 16gbshm_size: 16gb
-    container_name: shifts_challenge_nantes
+  dev_env:
+    container_name: shifts_challenge_nantes_tods
     build:
       context: .
       dockerfile: dockerfile
@@ -12,7 +12,7 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - CUDA_LAUNCH_BLOCKING=1
-      - PYTHONPATH=/App:App/vpower
+      - PYTHONPATH=/App
     runtime: nvidia
     # entrypoint: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.password='sha1:dc3069f3f0f6:76fb024e41e73de38fca44a1c9819f995c061cfa'
     entrypoint: tail -f /dev/null
