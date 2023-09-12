@@ -9,7 +9,8 @@
 | MAPIE                     | X          |         |      |
 |DA/SDV Single Table (KO)||X|
 |DA/SDV Sequantial (KO) ||X|
-
+|DA/Augment TS (KO) ||X|
+|DA/Tsaug (~KO) ||X|
 
 
 
