@@ -7,6 +7,14 @@
 | [[Sintel Tools  ]]        |           |         | X    |
 | TOOLS/[[AI Fairness 360]] | X         |         |      |
 | biais/mlp_bias            | X         |         |      |
+|DA/SDV Single Table (KO)||X|
+|DA/SDV Sequantial (KO) ||X|
+
+
+
+
+
+
 
 
 ## SOA
