@@ -12,7 +12,7 @@
 | DA/Augment TS (KO)        |           | X       |      |
 | DA/Tsaug (~KO)            |           | X       |      |
 | PyOD                      |           |         | X    |
-| PUNCC                         |           |         |    X  |
+| [[PUNCC  ]]                       |           |         |    X  |
 
 
 
