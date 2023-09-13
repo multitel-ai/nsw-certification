@@ -82,8 +82,9 @@ Basic features :
 - Time Series Forecasting (using Deep Neural Networks)
 -> On obtient des données synthétiques (soit avec un nombre random de samples, soit en se basant sur la dimension d'une time series données en entrée). Mais les données (d'un point de vue de la puissance_smoothed), ne sont pas trés représentatives et varient énormément.
 Mais les résulats obtenus ressemblent à des TS (>< SDV) et peuvent être plus utiles que les nuages de points qui paraissent aléatoires.
-
-
+On obtient des valeurs plutôt réalistes, très ressemblantes à des TS réelles (qui ont servi de fit à l'augmenter). On a donc la génération d'un ensemble de données (139000 samples), qui représentent la succession des vols générés.
+ ![[AugmentTS_Real&Synthetic.png]]
+![[AugmentTS_Real&Synthetic_1flight.png]]
 ## Tsaug
 => https://github.com/arundo/tsaug/tree/master
 Python package for Time Series Augmentation.
