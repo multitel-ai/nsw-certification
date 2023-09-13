@@ -33,7 +33,7 @@ regression_mean_coverage
 metrics.regression_sharpness
 
 
-# TEST Fligth 210 = tabular data with 275 samples
+# TEST 1
 
 ## TEST SPLIT CP
 ### Model : RandomForestRegressor: 
@@ -75,7 +75,7 @@ Total (Test set)
 
 Marginal coverage: 0.95 Average width: 134.65
 
-# TEST Adaptative EnbPI method
+## TEST Adaptative EnbPI method
 ## Models: HistGradientBoostingRegressor
 Total (Test set)
 **MemoryError: Unable to allocate 40.0 GiB for an array with shape (139006, 38614) and data type float64**
@@ -83,7 +83,7 @@ Total (Test set)
 ![[Pasted image 20230913101857.png]]
 Marginal coverage: 0.93 Average width: 105.27
 
-# TEST CV+ method
+## TEST CV+ method
 ## Models: HistGradientBoostingRegressor
 Total (Test set)
 Crash Kernel (memory)
@@ -119,10 +119,79 @@ Marginal coverage: 0.78 Average width: 134.65
 ![[Pasted image 20230913102633.png]]
 Marginal coverage: 0.81 Average width: 144.18
 
-# CV+ method
+## CV+ method
 
 ![[Pasted image 20230913104629.png]]
 Marginal coverage: 0.81 Average width: 144.92
 
 
-# Test sur IID
+
+# Test data nws (erreur de 10%)
+
+## SplitCP
+### Test
+![[Pasted image 20230913121646.png]]
+Marginal coverage: 0.96 Average width: 149.56
+### Lourd
+![[Pasted image 20230913122249.png]]
+Marginal coverage: 0.74 Average width: 149.56
+### DA
+![[Pasted image 20230913140147.png]]
+Marginal coverage: 0.72 Average width: 149.56
+
+
+## CQR : Conformalized Quantile Regression
+## TEST
+![[Pasted image 20230913140534.png]]
+Marginal coverage: 0.92 Average width: 113.45
+## LOURD
+![[Pasted image 20230913140928.png]]
+Marginal coverage: 0.78 Average width: 146.75
+## DA
+![[Pasted image 20230913141154.png]]
+Marginal coverage: 0.63 Average width: 114.64
+
+## Locally Adaptive Conformal Prediction
+### TEST
+![[Pasted image 20230913142534.png]]
+Marginal coverage: 0.89 Average width: 104.42
+
+### LOURD
+![[Pasted image 20230913142623.png]]
+Marginal coverage: 0.77 Average width: 151.36
+### DA
+![[Pasted image 20230913142726.png]]
+Marginal coverage: 0.63 Average width: 115.82
+
+## CV+ method
+### TEST
+![[Pasted image 20230913143204.png]]
+Marginal coverage: 0.98 Average width: 143.08
+### LOURD
+![[Pasted image 20230913143307.png]]
+Marginal coverage: 0.77 Average width: 142.37
+### DA
+![[Pasted image 20230913143406.png]]
+
+Marginal coverage: 0.79 Average width: 150.21
+
+## EnbPI: Ensemble Batch Prediction Intervals method
+### TEST
+![[Pasted image 20230913144101.png]]
+Marginal coverage: 0.97 Average width: 134.06
+### LOURD
+![[Pasted image 20230913144345.png]]
+Marginal coverage: 0.75 Average width: 134.06
+### DA
+![[Pasted image 20230913144508.png]]
+Marginal coverage: 0.7 Average width: 134.06
+## Locally adaptative EnbPI
+### TEST
+![[Pasted image 20230913145202.png]]
+Marginal coverage: 0.89 Average width: 92.05
+### LOURD
+![[Pasted image 20230913145646.png]]
+Marginal coverage: 0.77 Average width: 139.7
+### DA
+![[Pasted image 20230913145921.png]]
+Marginal coverage: 0.58 Average width: 102.61
