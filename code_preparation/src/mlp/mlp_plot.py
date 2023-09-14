@@ -74,7 +74,7 @@ def error_retention_plot_allsets(uncertainties, sqr_errors, sets_names):
         plt.subplot(1, 3, i + 1)
         get_comparison_error_retention_plot(error=sqr_errors[partition],
                                             uncertainty=uncertainties[partition]["tvar"])
-        plt.ylabel('MSE(KW)')
+        plt.ylabel('MSE(W)')
         plt.xlabel("Retention Fraction")
         plt.legend(loc="upper left", prop={"size": 12})
         plt.title(partition, pad=25)
