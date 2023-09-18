@@ -49,11 +49,10 @@ Les notes Obsidian peuvent être chargées dans l'application [Obsidian](https:/
 ## Usage 
 Les données doivent être placées dans un dossier *Data*. 
 
-Exemple de graphe obtenu avec la méthode EnbPI de la librairie Puncc (dans *Uncertainty/ML/test puncc*) :
-![enbpi graphe](https://github.com/multitel-ai/nsw-certification/blob/25ba95625738366af9f19e1760acf8555264e00f/Obsidian_notes/Attachements/Pasted%20image%20230913101857.png?raw=true)
+Exemple de graphe obtenu avec la locally adaptive Ensemble Batch Prediction Intervals method de la librairie Puncc (dans *Uncertainty/ML/test puncc new data*) :
+![output](https://github.com/multitel-ai/nsw-certification/assets/144004765/1d6feda5-c9bb-4d2a-a1e8-7571afb8eb41)
 
 ## Auteurs
-Les auteurs sont :
 - Emmanuel Jean (jean@multitel.be)
 - Bérangère Burgunder (burgunder@multitel.be)
 - Florian Facchin 
