@@ -185,7 +185,7 @@ Marginal coverage: 0.75 Average width: 134.06
 ### DA
 ![[Pasted image 20230913144508.png]]
 Marginal coverage: 0.7 Average width: 134.06
-## Locally adaptative EnbPI
+## Locally adaptative Ensemble Batch Prediction Intervals method
 ### TEST
 ![[Pasted image 20230913145202.png]]
 Marginal coverage: 0.89 Average width: 92.05
