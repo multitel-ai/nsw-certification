@@ -6,7 +6,7 @@
 Ce projet fait partie d'un summer workshop organisé par TRAIL ([Trusted AI Labs](https://trail.ac/)), un institut qui rassemble  des chercheurs travaillant sur l’IA au sein des universités de la Fédération Wallonie-Bruxelles et des Centres de Recherche Agréés.  L’Institut TRAIL souhaite faire avancer la recherche sur des sujets stratégiques tels que les interactions homme-machine, l’intelligence artificielle explicable (XAI), ou l’IA de confiance protégeant les données privées.
 
 ### But
-Le but de ce projet est de **CERTIFIER** un système estimant la puissance instantanée utilisée par un drone durant son vol. Ce système a été développé dans le cadre du projet WINGS par [Multitel](https://www.multitel.be/). L'objectif est maintenant de garantir l'utilisation d'une IA digne de confiance. Ceci passe par la **Certification** de l'ensemble du processus permettant d'obtenir et maintenir le composant IA/ML du système proposé. Cette certification couvre un grand nombre d'aspect, allant de la collecte des données au monitoring du système une fois celui-ci mis en production. Parmi les aspects certifiables de l'IA, nous nous sommes concentrés sur la **qualité des données (biais)** ainsi que **l'explicabilité, la robustesse et la gestion de l'incertitude** de nos modèles.
+Le but de ce projet est de **CERTIFIER** un système estimant la puissance instantanée utilisée par un drone durant son vol. Ce système a été développé dans le cadre du projet [WINGS](https://www.multitel.be/projets/wings/) par [Multitel](https://www.multitel.be/). L'objectif est maintenant de garantir l'utilisation d'une IA digne de confiance. Ceci passe par la **Certification** de l'ensemble du processus permettant d'obtenir et maintenir le composant IA/ML du système proposé. Cette certification couvre un grand nombre d'aspect, allant de la collecte des données au monitoring du système une fois celui-ci mis en production. Parmi les aspects certifiables de l'IA, nous nous sommes concentrés sur la **qualité des données (biais)** ainsi que **l'explicabilité, la robustesse et la gestion de l'incertitude** de nos modèles.
 
 ## Code 
 
@@ -18,9 +18,9 @@ Pour répondre à la problématique de prédiction de puissance instantanée con
 Leur code est disponible dans le dossier *code preparation*.
 
 #### Data quality
-Pour évaluer la qualité des données, nous souhaitons savoir si elles contiennent des biais. Le code *mlp biais* met en valeur les différences de distributions au sein d'une variable (comme le poids par exemple), et les différences de performances du modèle selon cette variable (**fairness**). 
+Pour évaluer la qualité des données, nous souhaitons savoir si elles contiennent des biais. Le code *mlp biais* met en valeur les différences de distributions au sein d'une variable (comme le poids par exemple), et les différences de performances du modèle selon cette variable ; cela évalue la **fairness**. 
 
-Le code *violin plots* montre les différences de distributions de la puissance au sein de différents sous jeux de données. Cela permet de définir un sous jeu de données comme "Out Of Distribution" (OOD) et de voir si le modèle performe aussi bien sur ce dernier. 
+Le code *violin plots* montre les différences de distributions de la puissance au sein de différents sous jeux de données. Cela permet de définir un sous jeu de données comme "Out Of Distribution" (OOD) et de voir si le modèle performe aussi bien sur ce dernier ; cela évalue la **robustesse**. 
 
 #### Data Augmentation
 
@@ -34,17 +34,15 @@ Pour se faire, différentes librairies ont été testées:
 Les codes de ces librairies sont disponibles dans le dossier *DA*.
 Le dossier *Models* contient les sauvegardes des modèles entrainés et utilisés pour la data augmentation.
 
-#### MAPIE
-Utilisation de la librairie [MAPIE](https://mapie.readthedocs.io/en/latest/index.html) et de son time series regressor pour estimer les intervalles de prédiction avec la méthode EnbPI. 
-
 #### Uncertainty
-Pour le modèle de DL (l'ensemble de MLP), 400 inférences sont réalisées pour une entrée (20 modèles initialisés 20 fois). Le modèle sort une moyenne et une déviation standard de gaussienne représentant la distribution de probabilité de la prédiction. Pour évaluer l'incertitude, les courbes de rétention sont calculées.
+Pour le modèle de Deep Learning (l'ensemble de MLP), 400 inférences sont réalisées pour une entrée (20 modèles initialisés 20 fois). Le modèle sort la moyenne et la déviation standard de la gaussienne représentant la distribution de probabilité de la prédiction. Pour évaluer l'incertitude, les courbes de rétention sont calculées.
 
-Pour le modèle ML (le HGBR), l'incertitude est quantifiée à l'aide de méthodes formelles implémentées dans la librairie [PUNCC](https://github.com/deel-ai/puncc). Elle permet de calculer la marginal coverage (le pourcentage de valeurs réelles contenues dans l'intervalle de prediction) et la largeur moyenne d'intervalle. 
+Pour le modèle Machine Learning (le HGBR), l'incertitude est quantifiée à l'aide de méthodes formelles implémentées dans la librairie [PUNCC](https://github.com/deel-ai/puncc). Elle permet de calculer la marginal coverage (le pourcentage de valeurs réelles contenues dans l'intervalle de prediction) et la largeur moyenne d'intervalle. \
+La librairie [MAPIE](https://mapie.readthedocs.io/en/latest/index.html) est aussi utilisée, plus particulièrement le time series regressor pour estimer les intervalles de prédiction avec la méthode EnbPI. 
 
 ## Installation
-Le projet contient différent dockers pour éxécuter le code contenu dans des notebooks jupyter. Nous avons utilisé VSCode et son extension Jupyter Notebook pour les ouvrir dans le container directement. \
-Les notes Obsidian peuvent être chargées dans l'application [Obsidian](https://obsidian.md/). 
+Le projet contient différent [dockers](https://www.docker.com/) pour éxécuter le code contenu dans des notebooks jupyter. Nous avons utilisé [VSCode](https://code.visualstudio.com/) et son extension [Jupyter](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) pour les ouvrir dans le container directement. \
+Les notes [Obsidian](https://obsidian.md/) peuvent être chargées dans l'application.
 
 ## Usage 
 Les données doivent être placées dans un dossier *Data*. 
